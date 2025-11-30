@@ -24,21 +24,6 @@
 &lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12
 &lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;13
 &lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;14
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;15
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;16
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;17
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;18
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;19
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;20
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;21
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;22
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;23
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;24
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;25
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;26
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;27
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;28
-&lt;/span&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;29
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%"&gt;
 &lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;package&lt;/span&gt; &lt;span style="color:#75af00"&gt;main&lt;/span&gt;
@@ -54,25 +39,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#00a8c8"&gt;func&lt;/span&gt; &lt;span style="color:#75af00"&gt;square&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#75af00"&gt;x&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;int&lt;/span&gt;&lt;span style="color:#111"&gt;)&lt;/span&gt; &lt;span style="color:#00a8c8"&gt;int&lt;/span&gt; &lt;span style="color:#111"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;return&lt;/span&gt; &lt;span style="color:#75af00"&gt;x&lt;/span&gt; &lt;span style="color:#f92672"&gt;*&lt;/span&gt; &lt;span style="color:#75af00"&gt;x&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;&lt;span style="color:#d88200"&gt;```
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#d88200"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#d88200"&gt;###Python代码
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#d88200"&gt;```&lt;/span&gt;&lt;span style="color:#75af00"&gt;python&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; &lt;span style="color:#75af00"&gt;numpy&lt;/span&gt; &lt;span style="color:#75af00"&gt;as&lt;/span&gt; &lt;span style="color:#75af00"&gt;np&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75af00"&gt;def&lt;/span&gt; &lt;span style="color:#75af00"&gt;matrix_operations&lt;/span&gt;&lt;span style="color:#111"&gt;():&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; &lt;span style="color:#75af00"&gt;创建矩阵&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75af00"&gt;a&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#75af00"&gt;np&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;array&lt;/span&gt;&lt;span style="color:#111"&gt;([[&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;&lt;span style="color:#111"&gt;,&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;&lt;span style="color:#111"&gt;],&lt;/span&gt; &lt;span style="color:#111"&gt;[&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;3&lt;/span&gt;&lt;span style="color:#111"&gt;,&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;4&lt;/span&gt;&lt;span style="color:#111"&gt;]])&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75af00"&gt;b&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#75af00"&gt;np&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;array&lt;/span&gt;&lt;span style="color:#111"&gt;([[&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;5&lt;/span&gt;&lt;span style="color:#111"&gt;,&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;6&lt;/span&gt;&lt;span style="color:#111"&gt;],&lt;/span&gt; &lt;span style="color:#111"&gt;[&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;7&lt;/span&gt;&lt;span style="color:#111"&gt;,&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;8&lt;/span&gt;&lt;span style="color:#111"&gt;]])&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#960050;background-color:#1e0010"&gt;#&lt;/span&gt; &lt;span style="color:#75af00"&gt;矩阵乘法&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#75af00"&gt;result&lt;/span&gt; &lt;span style="color:#111"&gt;=&lt;/span&gt; &lt;span style="color:#75af00"&gt;np&lt;/span&gt;&lt;span style="color:#111"&gt;.&lt;/span&gt;&lt;span style="color:#75af00"&gt;dot&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#75af00"&gt;a&lt;/span&gt;&lt;span style="color:#111"&gt;,&lt;/span&gt; &lt;span style="color:#75af00"&gt;b&lt;/span&gt;&lt;span style="color:#111"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#00a8c8"&gt;return&lt;/span&gt; &lt;span style="color:#75af00"&gt;result&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;print&lt;/span&gt;&lt;span style="color:#111"&gt;(&lt;/span&gt;&lt;span style="color:#75af00"&gt;matrix_operations&lt;/span&gt;&lt;span style="color:#111"&gt;())&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#111"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;###JavaScript代码&lt;/p&gt;</description></item><item><title>关于我</title><link>https://rang-jiao.github.io/about/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/about/</guid><description>&lt;p&gt;这里是关于我的介绍(有待修改)，支持 **Markdown** 格式。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;###Python代码&lt;/p&gt;</description></item><item><title>关于我</title><link>https://rang-jiao.github.io/about/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/about/</guid><description>&lt;p&gt;这里是关于我的介绍(有待修改)，支持 **Markdown** 格式。&lt;/p&gt;
 &lt;p&gt;- 兴趣爱好&lt;/p&gt;
 &lt;p&gt;- 联系方式&lt;/p&gt;
 &lt;p&gt;- 工作经历&lt;/p&gt;</description></item></channel></rss>
