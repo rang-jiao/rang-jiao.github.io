@@ -8,6 +8,10 @@
 &amp;nbsp; font-family: serif;
 &amp;nbsp; line-height: 1.8;
 }
+.vertical-rtl p {
+text-align: start;
+margin: 0 0 2rem 0;
+}
 .custom-hide-meta .post-meta {
 &amp;nbsp; display: none;
 }
