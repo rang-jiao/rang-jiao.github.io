@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>数学 on 交讓所生</title><link>https://rang-jiao.github.io/tags/%E6%95%B0%E5%AD%A6/</link><description>Recent content in 数学 on 交讓所生</description><generator>Hugo -- 0.153.5</generator><language>zh-cn</language><lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rang-jiao.github.io/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>一阶非齐次线性微分方程通解</title><link>https://rang-jiao.github.io/posts/dfuction/</link><pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/dfuction/</guid><description>&lt;p&gt;你电微积分教程中求解一阶非齐次线性方程&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=Q(x)
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;的方法,称作&lt;strong&gt;常数变易法&lt;/strong&gt;，是通过求对应的齐次线性方程&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation*}
+\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=0
+\end{equation*}
+$$&lt;/p&gt;
+&lt;p&gt;的解$y=Ce^{-\int P(x)\mathrm{d}x}$，然后将其&lt;code&gt;中的任意常数C变为x的一个待定系数C(x)&lt;/code&gt;，把$y=C(x)e^{-\int P(x)\mathrm{d}x}$代入方程$(1)$，可得&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation*}
+C&amp;rsquo;(x)e^{-\int P(x)\mathrm{d}x}-P(x)C(x)e^{-\int P(x)\mathrm{d}x}+P(x)C(x)e^{-\int P(x)\mathrm{d}x}=Q(x)
+\end{equation*}
+$$&lt;/p&gt;
+&lt;p&gt;整理化简之后可以求得$C(x)$，然后反代得到方程$(1)$的解.&lt;/p&gt;
+&lt;p&gt;鼠鼠今天预习到这里时候不太喜欢这种做法，总感觉直接把常数变成x的方程能难受，教材也没有解释为什么可以变（好吧我知道这不是工科生该考虑的），所以想到可能有别的解释或想法.&lt;/p&gt;
+&lt;p&gt;以下是鼠鼠的做法：
+我们知道求导公式$(P(x)Q(x))&amp;rsquo;=P&amp;rsquo;(x)Q(x)+Q&amp;rsquo;(x)P(x)$，那么我们可以配凑一个函数$C(x)$使得$(1)$可以变成&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+y&amp;rsquo;C(x)+P(x)C(x)y=Q(x)C(x),C(x)\not\equiv0
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;，其中$P(x)C(x)=C&amp;rsquo;(x)$，这样$(2)$的等式左边可以直接积分消掉$y&amp;rsquo;$.
+接下来我们求解$C(x)$:&lt;/p&gt;
+&lt;p&gt;$$
+P(x)=\frac{C&amp;rsquo;(x)}{C(x)}
+$$&lt;/p&gt;
+&lt;p&gt;用换元法令$t=C(x)$对两边同时积分可以得到&lt;/p&gt;
+&lt;p&gt;$$
+\int P(x)\mathrm{d}x=\ln |C(x)|
+$$&lt;/p&gt;
+&lt;p&gt;$$
+C(x)=\pm e^{\int P(x)\mathrm{d}x}
+$$&lt;/p&gt;
+&lt;p&gt;我们&lt;strong&gt;只取其一&lt;/strong&gt;，也就是只令$C(x)=e^{\int P(x)\mathrm{d}x}$或$C(x)=-e^{\int P(x)\mathrm{d}x}$就可以配凑出$(2)$所需的函数.&lt;/p&gt;
+&lt;p&gt;然后试着解一下课本例10的问题&lt;/p&gt;
+&lt;p&gt;$$
+\cos x \cdot y&amp;rsquo;+y\sin x =1
+$$&lt;/p&gt;
+&lt;p&gt;重写方程得到&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+y&amp;rsquo;+y\tan x =\sec x
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+C(x)=e^{\int \tan x\mathrm{d}x}=\sec x+C_1
+$$&lt;/p&gt;</description></item></channel></rss>

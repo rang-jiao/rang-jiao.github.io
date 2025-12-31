@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交讓所生</title><link>https://rang-jiao.github.io/</link><description>Recent content on 交讓所生</description><generator>Hugo -- 0.152.2</generator><language>zh-cn</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rang-jiao.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>高中回忆录</title><link>https://rang-jiao.github.io/posts/relook_of_senior_high/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/relook_of_senior_high/</guid><description>&lt;p&gt;&lt;strong&gt;我终于有空，也有精力，也有动力，也有内容，来写下这篇文章了&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交讓所生</title><link>https://rang-jiao.github.io/</link><description>Recent content on 交讓所生</description><generator>Hugo -- 0.153.5</generator><language>zh-cn</language><lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rang-jiao.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>一阶非齐次线性微分方程通解</title><link>https://rang-jiao.github.io/posts/dfuction/</link><pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/dfuction/</guid><description>&lt;p&gt;你电微积分教程中求解一阶非齐次线性方程&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=Q(x)
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;的方法,称作&lt;strong&gt;常数变易法&lt;/strong&gt;，是通过求对应的齐次线性方程&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation*}
+\frac{\mathrm{d}y}{\mathrm{d}x}+P(x)y=0
+\end{equation*}
+$$&lt;/p&gt;
+&lt;p&gt;的解$y=Ce^{-\int P(x)\mathrm{d}x}$，然后将其&lt;code&gt;中的任意常数C变为x的一个待定系数C(x)&lt;/code&gt;，把$y=C(x)e^{-\int P(x)\mathrm{d}x}$代入方程$(1)$，可得&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation*}
+C&amp;rsquo;(x)e^{-\int P(x)\mathrm{d}x}-P(x)C(x)e^{-\int P(x)\mathrm{d}x}+P(x)C(x)e^{-\int P(x)\mathrm{d}x}=Q(x)
+\end{equation*}
+$$&lt;/p&gt;
+&lt;p&gt;整理化简之后可以求得$C(x)$，然后反代得到方程$(1)$的解.&lt;/p&gt;
+&lt;p&gt;鼠鼠今天预习到这里时候不太喜欢这种做法，总感觉直接把常数变成x的方程能难受，教材也没有解释为什么可以变（好吧我知道这不是工科生该考虑的），所以想到可能有别的解释或想法.&lt;/p&gt;
+&lt;p&gt;以下是鼠鼠的做法：
+我们知道求导公式$(P(x)Q(x))&amp;rsquo;=P&amp;rsquo;(x)Q(x)+Q&amp;rsquo;(x)P(x)$，那么我们可以配凑一个函数$C(x)$使得$(1)$可以变成&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+y&amp;rsquo;C(x)+P(x)C(x)y=Q(x)C(x),C(x)\not\equiv0
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;，其中$P(x)C(x)=C&amp;rsquo;(x)$，这样$(2)$的等式左边可以直接积分消掉$y&amp;rsquo;$.
+接下来我们求解$C(x)$:&lt;/p&gt;
+&lt;p&gt;$$
+P(x)=\frac{C&amp;rsquo;(x)}{C(x)}
+$$&lt;/p&gt;
+&lt;p&gt;用换元法令$t=C(x)$对两边同时积分可以得到&lt;/p&gt;
+&lt;p&gt;$$
+\int P(x)\mathrm{d}x=\ln |C(x)|
+$$&lt;/p&gt;
+&lt;p&gt;$$
+C(x)=\pm e^{\int P(x)\mathrm{d}x}
+$$&lt;/p&gt;
+&lt;p&gt;我们&lt;strong&gt;只取其一&lt;/strong&gt;，也就是只令$C(x)=e^{\int P(x)\mathrm{d}x}$或$C(x)=-e^{\int P(x)\mathrm{d}x}$就可以配凑出$(2)$所需的函数.&lt;/p&gt;
+&lt;p&gt;然后试着解一下课本例10的问题&lt;/p&gt;
+&lt;p&gt;$$
+\cos x \cdot y&amp;rsquo;+y\sin x =1
+$$&lt;/p&gt;
+&lt;p&gt;重写方程得到&lt;/p&gt;
+&lt;p&gt;$$
+\begin{equation}
+y&amp;rsquo;+y\tan x =\sec x
+\end{equation}
+$$&lt;/p&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+C(x)=e^{\int \tan x\mathrm{d}x}=\sec x+C_1
+$$&lt;/p&gt;</description></item><item><title>高中回忆录</title><link>https://rang-jiao.github.io/posts/relook_of_senior_high/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/relook_of_senior_high/</guid><description>&lt;p&gt;&lt;strong&gt;我终于有空，也有精力，也有动力，也有内容，来写下这篇文章了&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我的高中过得还算精彩，相对于贫乏的小初生活。换句话说，我的高中并没有很多值得后悔遗憾的地方，至少没有重要的事情是这样。&lt;/p&gt;
 &lt;p&gt;老实说，刚上高一时候的我和现在一样，都是趁着三分钟热度狠卷，当时的我心智并未成熟，在对学习的新鲜当中逐步学会学习和生活。&lt;/p&gt;
 &lt;h1 id="生活"&gt;生活&lt;/h1&gt;
@@ -36,18 +89,18 @@
 &lt;h3 id="go语言代码"&gt;Go语言代码&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;package&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;main&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;&lt;/span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;import&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#0086d2"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span style="color:#888"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;import&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#0086d2"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;&lt;/span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;func&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#ff0086;font-weight:bold"&gt;main&lt;/span&gt;()&lt;span style="color:#888"&gt; &lt;/span&gt;{&lt;span style="color:#888"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;func&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#ff0086;font-weight:bold"&gt;main&lt;/span&gt;()&lt;span style="color:#888"&gt; &lt;/span&gt;{&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 6&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;fmt.&lt;span style="color:#ff0086;font-weight:bold"&gt;Println&lt;/span&gt;(&lt;span style="color:#0086d2"&gt;&amp;#34;Hello, Hugo!&amp;#34;&lt;/span&gt;)&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 7&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#080;background-color:#0f140f;font-style:italic"&gt;// 计算平方&lt;/span&gt;&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 8&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;result&lt;span style="color:#888"&gt; &lt;/span&gt;:=&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#ff0086;font-weight:bold"&gt;square&lt;/span&gt;(&lt;span style="color:#0086f7;font-weight:bold"&gt;5&lt;/span&gt;)&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 9&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;fmt.&lt;span style="color:#ff0086;font-weight:bold"&gt;Printf&lt;/span&gt;(&lt;span style="color:#0086d2"&gt;&amp;#34;5的平方是: %d\n&amp;#34;&lt;/span&gt;,&lt;span style="color:#888"&gt; &lt;/span&gt;result)&lt;span style="color:#888"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;&lt;/span&gt;}&lt;span style="color:#888"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;10&lt;/span&gt;&lt;span&gt;}&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;11&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;&lt;/span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;func&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#ff0086;font-weight:bold"&gt;square&lt;/span&gt;(x&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt;)&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;{&lt;span style="color:#888"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;func&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#ff0086;font-weight:bold"&gt;square&lt;/span&gt;(x&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt;)&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;{&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;13&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;return&lt;/span&gt;&lt;span style="color:#888"&gt; &lt;/span&gt;x&lt;span style="color:#888"&gt; &lt;/span&gt;*&lt;span style="color:#888"&gt; &lt;/span&gt;x&lt;span style="color:#888"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;14&lt;/span&gt;&lt;span&gt;&lt;span style="color:#888"&gt;&lt;/span&gt;}&lt;span style="color:#888"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;14&lt;/span&gt;&lt;span&gt;}&lt;span style="color:#888"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="python代码"&gt;Python代码&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-Python" data-lang="Python"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;import&lt;/span&gt; numpy &lt;span style="color:#fb660a;font-weight:bold"&gt;as&lt;/span&gt; np
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2&lt;/span&gt;&lt;span&gt;
@@ -63,7 +116,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;12&lt;/span&gt;&lt;span&gt;print(matrix_operations())
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="javascript代码"&gt;JavaScript代码&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 1&lt;/span&gt;&lt;span&gt;&lt;span style="color:#080;background-color:#0f140f;font-style:italic"&gt;// 异步函数示例
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2&lt;/span&gt;&lt;span&gt;&lt;span style="color:#080;background-color:#0f140f;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;async&lt;/span&gt; &lt;span style="color:#fb660a;font-weight:bold"&gt;function&lt;/span&gt; fetchData() {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 2&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;async&lt;/span&gt; &lt;span style="color:#fb660a;font-weight:bold"&gt;function&lt;/span&gt; fetchData() {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 3&lt;/span&gt;&lt;span&gt; &lt;span style="color:#fb660a;font-weight:bold"&gt;try&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 4&lt;/span&gt;&lt;span&gt; &lt;span style="color:#fb660a;font-weight:bold"&gt;const&lt;/span&gt; response = &lt;span style="color:#fb660a;font-weight:bold"&gt;await&lt;/span&gt; fetch(&lt;span style="color:#0086d2"&gt;&amp;#39;https://api.github.com&amp;#39;&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt; 5&lt;/span&gt;&lt;span&gt; &lt;span style="color:#fb660a;font-weight:bold"&gt;const&lt;/span&gt; data = &lt;span style="color:#fb660a;font-weight:bold"&gt;await&lt;/span&gt; response.json();
