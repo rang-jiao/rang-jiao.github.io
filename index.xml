@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交讓所生</title><link>https://rang-jiao.github.io/</link><description>Recent content on 交讓所生</description><generator>Hugo -- 0.159.1</generator><language>zh-cn</language><lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://rang-jiao.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>JavaScript Note</title><link>https://rang-jiao.github.io/posts/javascript-note/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/javascript-note/</guid><description>&lt;h1 id="before-we-start"&gt;Before We Start&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>交讓所生</title><link>https://rang-jiao.github.io/</link><description>Recent content on 交讓所生</description><generator>Hugo -- 0.160.1</generator><language>zh-cn</language><lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://rang-jiao.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>2026年计算机转专业题目</title><link>https://rang-jiao.github.io/posts/toinscse/</link><pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/toinscse/</guid><description>&lt;h1 id="1浮点数加减运算40分"&gt;1.浮点数加减运算(40分)&lt;/h1&gt;
+&lt;p&gt;设计一个程序，依次输入表达数浮点数与运算符，并以分号&lt;code&gt;;&lt;/code&gt;结尾，输出表达式的结果&lt;/p&gt;
+&lt;p&gt;例：输入&lt;code&gt;23+34-5;&lt;/code&gt;，输出&lt;code&gt;52.000000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果输入格式错误或输入内容不合法，输出&lt;code&gt;error&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;例：输入&lt;code&gt;5+3,&lt;/code&gt;，输出&lt;code&gt;error&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="2学生成绩数组排序40分"&gt;2.学生成绩数组排序(40分)&lt;/h1&gt;
+&lt;p&gt;结构体：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C" data-lang="C"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1&lt;/span&gt;&lt;span&gt;&lt;span style="color:#fb660a;font-weight:bold"&gt;struct&lt;/span&gt; Student{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;2&lt;/span&gt;&lt;span&gt; &lt;span style="color:#cdcaa9;font-weight:bold"&gt;char&lt;/span&gt;[&lt;span style="color:#0086f7;font-weight:bold"&gt;10&lt;/span&gt;] id;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;3&lt;/span&gt;&lt;span&gt; &lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt; score;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;4&lt;/span&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;函数原型：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-C" data-lang="C"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"&gt;1&lt;/span&gt;&lt;span&gt; &lt;span style="color:#cdcaa9;font-weight:bold"&gt;void&lt;/span&gt; &lt;span style="color:#ff0086;font-weight:bold"&gt;SortStudent&lt;/span&gt;(&lt;span style="color:#fb660a;font-weight:bold"&gt;struct&lt;/span&gt; Student stu[], &lt;span style="color:#cdcaa9;font-weight:bold"&gt;int&lt;/span&gt; n);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中stu是学生成绩数组，n是有效数据个数，要求对给定的数组按照&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;score更大的学生排列在前；&lt;/li&gt;
+&lt;li&gt;若score相等，则按照id从小到大排列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例：&lt;/p&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;p&gt;S003 74&lt;/p&gt;
+&lt;p&gt;S002 85&lt;/p&gt;
+&lt;p&gt;S001 74&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;则输出（不要求printf，matu直接检测数组本身）：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;S00285&lt;/p&gt;
+&lt;p&gt;S001 74&lt;/p&gt;
+&lt;p&gt;S003 74&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="梅森素数20分"&gt;梅森素数(20分)&lt;/h1&gt;
+&lt;p&gt;梅森素数是指，对于一个正整数$n$，若$n$是素数，且$2^n-1$也是素数，则后者称为梅森素数，前者称为指数。例如：
+$2$是素数， $2^2-1=3$是素数，则$3$是梅森素数。&lt;/p&gt;
+&lt;p&gt;输入max_n，输出&lt;strong&gt;指数&lt;/strong&gt;不超过max_n的梅森素数，用空格隔开，最后一个数的空格后加换行，例：&lt;/p&gt;
+&lt;p&gt;输入&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;输出&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3 7 31 \n&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>JavaScript Note</title><link>https://rang-jiao.github.io/posts/javascript-note/</link><pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/javascript-note/</guid><description>&lt;h1 id="before-we-start"&gt;Before We Start&lt;/h1&gt;
 &lt;h2 id="before-technology"&gt;before technology&lt;/h2&gt;
 &lt;p&gt;In fact, my purpose to write this post is to practice my English and just review what i have learnt over the past month, I also want to take some notes. Of course, if this is useful for you, i will vary happy.&lt;/p&gt;
 &lt;p&gt;This is just a note about JavaScript, not a guide.So if you want to learn JS, please look for another post, or wait for me to write one in the future, when I finish my learning about JavaScript.&lt;/p&gt;</description></item><item><title>MATLAB Note</title><link>https://rang-jiao.github.io/posts/matlab-note/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>https://rang-jiao.github.io/posts/matlab-note/</guid><description>&lt;h1 id="first"&gt;First&lt;/h1&gt;
