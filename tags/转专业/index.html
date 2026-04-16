@@ -5,7 +5,7 @@
 如果输入格式错误或输入内容不合法，输出error
 例：输入5+3,，输出error
 2.学生成绩数组排序(40分) 结构体：
-1struct Student{ 2 char[10] id; 3 int score; 4} 函数原型：
+1struct Student{ 2 char id[10]; 3 int score; 4} 函数原型：
 1 void SortStudent(struct Student stu[], int n); 其中stu是学生成绩数组，n是有效数据个数，要求对给定的数组按照
 score更大的学生排列在前； 若score相等，则按照id从小到大排列 例：
 输入
